@@ -32,7 +32,7 @@ mqshutdown broker
 mqshutdown namesrv
 
 
-如果不是第一次运行rocketmq，则将C:\Users\Administrator\store文件夹下的文件全部删除，则可以正常启动
+[//]: # (如果不是第一次运行rocketmq，则将C:\Users\Administrator\store文件夹下的文件全部删除，则可以正常启动)
 ### Delete Message:
 `./mqadmin deleteTopic -c DefaultCluster -n localhost:9876 -t {topicName}`
 ### Environment setup
