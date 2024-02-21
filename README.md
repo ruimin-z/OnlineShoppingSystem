@@ -15,7 +15,7 @@ The following guides illustrate how to use some features concretely:
 
 
 ## RocketMQ
-Enter CMD go to Folder Desktop/Projects/FullStackProject/rocketmq-4.9.3/bin
+Enter CMD go to Folder /rocketmq-4.9.3/bin
 
 Start RocketMQ with: `./mqnamesrv`
 
@@ -38,14 +38,14 @@ mqshutdown namesrv
 ### Environment setup
 Key: ROCKETMQ_HOME
 
-Val: D:\rocketmq-all-4.9.3-bin-release\rocketmq-4.9.3
+Val: rocketmq-4.9.3
 
 ### Elasticsearch
-1. Enter CMD go to Folder Desktop/Projects/FullStackProject/elasticsearch-7.4.2/bin
+1. Enter CMD go to Folder /elasticsearch-7.4.2/bin
 
 2. Type `./elasticsearch`
 
-3. Enter CMD goto folder Desktop/Projects/FullStackProject/kibana-7.4.2-darwin-x86_64/bin
+3. Enter CMD goto folder /kibana-7.4.2-darwin-x86_64/bin
 
 4. Type `./kibana`
 
@@ -60,5 +60,5 @@ Update POM with pacakage Jar and plugins for maven
 In Plugins do compile and then jar
 Copy from target to root path, then type:
 ```
-mvn install:install-file -Dfile=target/OnlineShopping_02-1.0.jar -DgroupId=com.qiuzhitech -DartifactId=OnlineShopping -Dversion=1.1 -Dpackaging=jar
+mvn install:install-file -Dfile=target/OnlineShopping-1.0.jar -DgroupId=com.qiuzhitech -DartifactId=OnlineShopping -Dversion=1.1 -Dpackaging=jar
 ```
