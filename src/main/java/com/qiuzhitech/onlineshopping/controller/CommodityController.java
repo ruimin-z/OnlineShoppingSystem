@@ -81,6 +81,11 @@ public class CommodityController {
         return "item_detail";
     }
 
+    @RequestMapping("/staticItem/{commodityId}")
+    public String staticItemPage(@PathVariable("commodityId") long commodityId) {
+        // 静态页面
+        return "item_detail_" + commodityId;
+    }
 
     @GetMapping("/listItems/{sellerId}")
     public String getCommoditiesByUserId(@PathVariable("sellerId") String sellerId,
