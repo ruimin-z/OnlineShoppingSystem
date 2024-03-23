@@ -18,7 +18,11 @@ class TestConsumerListenerTest {
     RocketMQService rocketMQService;
 
     @Test
-    public void testMessage() throws MQBrokerException, RemotingException, InterruptedException, MQClientException {
-        rocketMQService.sendMessage("consumerTopic", "Today is " + new Date());
+    public void testMessage() throws Exception {
+        int i = 5; // 一次发5个message
+        while(i>0) {
+            i--;
+            rocketMQService.sendMessage("consumerTopicMultiple", "Today is " + new Date());
+        }
     }
 }

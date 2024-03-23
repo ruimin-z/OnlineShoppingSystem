@@ -14,7 +14,7 @@ public class RocketMQService {
     @Resource
     private RocketMQTemplate rocketMQTemplate;
 
-    public void sendMessage(String topic, String msg) throws MQBrokerException, RemotingException, InterruptedException, MQClientException {
+    public void sendMessage(String topic, String msg) throws Exception {
         Message message = new Message(topic, msg.getBytes());
         rocketMQTemplate.getProducer().send(message);
     }

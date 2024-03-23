@@ -18,9 +18,13 @@ The following guides illustrate how to use some features concretely:
 Enter CMD go to Folder /rocketmq-4.9.3/bin
 
 Start RocketMQ with: `./mqnamesrv`
+or 
+`nohup sh bin/mqnamesrv &`
 
 Launch a new terminal with:
-`start mqbroker -n localhost:9876 autoCreateTopic=true`
+`sh mqbroker -n localhost:9876 -c ../conf/broker.conf autoCreateTopicEnable=true`
+
+[//]: # (`start mqbroker -n localhost:9876 autoCreateTopic=true`)
 
 Delete Message:
 `./mqadmin deleteTopic -c DefaultCluster -n localhost:9876 -t {topicName}`

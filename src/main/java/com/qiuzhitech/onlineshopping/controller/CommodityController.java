@@ -41,7 +41,7 @@ public class CommodityController {
         return "add_commodity";
     }
 
-    @GetMapping("/commodities")
+    @GetMapping({"/commodities", "/"})
     public String getCommodities(Map<String, Object> res){
         List<OnlineShoppingCommodity> commodityList = commodityDao.listCommodities();
         res.put("itemList", commodityList);
